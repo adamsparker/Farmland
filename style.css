@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 
+ font-family: "Instrument Serif", serif;
+ font-family: "Inter", sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1em;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: url(assets/main-bg.jpg) center bottom no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+.m-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.mh-inner {
+    background-color: rgba(255, 255, 255, 0.200);
+    padding: 1em;
+    border-radius: 6px;
+    display: flex;
+    gap: 30px;
+    backdrop-filter: blur(20px);
+}
+
+.mh-link {
+    color: white;
+}
+
+.mh-btn {
+    background-color: rgba(255, 255, 255, 0.200);
+    padding: 1em;
+    border-radius: 6px;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.m-inner {
+
+    padding: 5em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #070707;
+    background-color: white;
+    width: 100%;
+}
+
+.m-title {
+    font-size: 8em;
+    font-family: "Instrument Serif", serif;
+}
+
+.m-subtitle {
+    font-size: 1.5em;
+}
+
+.mh-logo {
+    height: 35px;
+    transition: .2s all;
+}
+
+.mh-logo:hover {
+    transform: rotate(-45deg);
+}
+
+.intro {
+    height: 100vh;
+    background-color: white;
+}
